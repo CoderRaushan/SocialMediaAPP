@@ -10,14 +10,20 @@ const PostList = () => {
   useEffect(()=>
   {
     setspinner(true);
-    fetch('https://dummyjson.com/posts')
+    const controller=new AbortController();
+    const signal=controller.signal;
+    fetch('https://dummyjson.com/posts',{signal})
     .then(res => res.json())
     .then(data => 
     {
       addPostFromServer(data.posts);
       setspinner(false);
+    });
+    return ()=>
+    {
+      console.log("cleaning up useeffect()");
+      controller.abort();
     }
-    );
   },[])
   return (
   <>
