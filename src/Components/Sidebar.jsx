@@ -10,13 +10,13 @@ const Sidebar = ({selectedTab,setSelectedTab}) =>
       <hr />
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-          <Link to="/" className={`nav-link text-light`} aria-current="page">
+          <Link to="/SocialMediaAPP" className={`nav-link text-light`} aria-current="page">
             <svg className="bi pe-none me-2" width="16" height="16"><use xlinkHref="#home"></use></svg>
             Home
           </Link>
         </li>
         <li>
-          <Link to="/CreatePost" className={`nav-link text-light`}>
+          <Link to="/SocialMediaAPP/CreatePost" className={`nav-link text-light`}>
             <svg className="bi pe-none me-2" width="16" height="16"><use xlinkHref="#speedometer2"></use></svg>
             Create Post
           </Link>

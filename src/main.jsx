@@ -8,9 +8,9 @@ import PostList from './Components/PostList.jsx';
 import CreatePost from './Components/CreatePost.jsx';
 const Router=createBrowserRouter(
   [
-      {path:"/",element:<App />,children:[
-      {path:"/", element:<PostList/>},
-      {path:"/CreatePost", element:<CreatePost />}
+      {path:"/SocialMediaAPP",element:<App />,children:[
+      {path:"/SocialMediaAPP", element:<PostList/>},
+      {path:"/SocialMediaAPP/CreatePost", element:<CreatePost />}
     ]},
   ]
 );

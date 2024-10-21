@@ -15,10 +15,10 @@ const Header=({selectedTab,setSelectedTab})=>
        <div className="offcanvas-body">
          <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
            <li className="nav-item">
-             <Link to="/" className="nav-link" aria-current="page" style={{cursor:"pointer"}}>Home</Link>
+             <Link to="/SocialMediaAPP" className="nav-link" aria-current="page" style={{cursor:"pointer"}}>Home</Link>
            </li>
            <li className="nav-item">
-           <Link to="/CreatePost" className="nav-link" style={{cursor:"pointer"}} >Create Post</Link>
+           <Link to="/SocialMediaAPP/CreatePost" className="nav-link" style={{cursor:"pointer"}} >Create Post</Link>
            </li>
          </ul>
          <form className="d-flex mt-3" role="search">
